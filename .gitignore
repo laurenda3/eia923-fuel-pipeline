@@ -1,0 +1,26 @@
+# Virtual environments
+venv/
+env/
+.venv/
+
+# DuckDB local database files
+*.duckdb
+*.duckdb.wal
+*.duckdb.tmp
+
+# Raw large source data
+*.csv
+*Zone.Identifier
+
+# dbt build artifacts & logs
+eia923_pipeline/target/
+eia923_pipeline/dbt_packages/
+eia923_pipeline/logs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db

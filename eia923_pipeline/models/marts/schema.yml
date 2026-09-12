@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_plants
+    description: "Dimension table containing plant metadata, grid assignment, and classification."
+    columns:
+      - name: plant_id
+        description: "Primary key for power plants."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: fct_plant_fuel_consumption
+    description: "Fact table recording annual boiler fuel consumption metrics by plant and fuel type."
+    columns:
+      - name: plant_id
+        description: "Foreign key referencing dim_plants."
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_plants')
+                field: plant_id
+      - name: fuel_type_code
+        description: "Reported fuel code."
+        data_tests:
+          - not_null
+      - name: annual_fuel_consumed
+        description: "Total annual physical volume burned."
+        data_tests:
+          - not_null

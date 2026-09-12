@@ -1,0 +1,85 @@
+[0m07:02:14.622865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f2b8865e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f2ba6b8a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f2b71ef890>]}
+
+
+============================== 07:02:14.629992 | 3608eff2-e1a9-430b-943b-b73da8338dc3 ==============================
+[0m07:02:14.629992 [info ] [MainThread]: Running with dbt=1.12.4
+[0m07:02:14.631167 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'fail_fast': 'False', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'profiles_dir': '/home/renda/.dbt', 'log_format': 'default', 'use_experimental_parser': 'False', 'printer_width': '80', 'hints_enabled': 'True', 'no_print': 'None', 'version_check': 'True', 'partial_parse': 'True', 'empty': 'None', 'log_path': 'logs', 'invocation_command': 'dbt init eia923_pipeline'}
+[0m07:02:14.670973 [debug] [MainThread]: Starter project path: /home/renda/analytics_engineer_projects/eia923_project/venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m07:02:14.677426 [info ] [MainThread]: Setting up your profile.
+[0m07:02:31.344697 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m07:02:31.346064 [info ] [MainThread]: dbt version: 1.12.4
+[0m07:02:31.346943 [info ] [MainThread]: python version: 3.14.4
+[0m07:02:31.347717 [info ] [MainThread]: python path: /home/renda/analytics_engineer_projects/eia923_project/venv/bin/python3
+[0m07:02:31.348505 [info ] [MainThread]: os info: Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m07:02:31.450519 [info ] [MainThread]: Using profiles dir at /home/renda/.dbt
+[0m07:02:31.451342 [info ] [MainThread]: Using profiles.yml file at /home/renda/.dbt/profiles.yml
+[0m07:02:31.452290 [info ] [MainThread]: Using dbt_project.yml file at /home/renda/analytics_engineer_projects/eia923_project/eia923_pipeline/dbt_project.yml
+[0m07:02:31.455209 [info ] [MainThread]: adapter type: duckdb
+[0m07:02:31.455896 [info ] [MainThread]: adapter version: 1.11.0
+[0m07:02:31.665001 [info ] [MainThread]: Configuration:
+[0m07:02:31.665812 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:02:31.666803 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m07:02:31.667596 [info ] [MainThread]: Required dependencies:
+[0m07:02:31.668461 [debug] [MainThread]: Executing "git --help"
+[0m07:02:31.709537 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:02:31.710648 [debug] [MainThread]: STDERR: "b''"
+[0m07:02:31.711275 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:02:31.711907 [info ] [MainThread]: Connection:
+[0m07:02:31.712738 [info ] [MainThread]:   database: dev
+[0m07:02:31.713580 [info ] [MainThread]:   schema: main
+[0m07:02:31.714402 [info ] [MainThread]:   path: dev.duckdb
+[0m07:02:31.715232 [info ] [MainThread]:   config_options: None
+[0m07:02:31.716056 [info ] [MainThread]:   extensions: None
+[0m07:02:31.716823 [info ] [MainThread]:   settings: {}
+[0m07:02:31.717550 [info ] [MainThread]:   external_root: .
+[0m07:02:31.718512 [info ] [MainThread]:   use_credential_provider: None
+[0m07:02:31.719437 [info ] [MainThread]:   attach: None
+[0m07:02:31.720510 [info ] [MainThread]:   filesystems: None
+[0m07:02:31.723586 [info ] [MainThread]:   remote: None
+[0m07:02:31.729408 [info ] [MainThread]:   plugins: None
+[0m07:02:31.730999 [info ] [MainThread]:   disable_transactions: False
+[0m07:02:31.732474 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m07:02:31.855450 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m07:02:31.899196 [debug] [MainThread]: Using duckdb connection "debug"
+[0m07:02:31.899757 [debug] [MainThread]: On debug: select 1 as id
+[0m07:02:31.900126 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:02:31.937692 [debug] [MainThread]: SQL status: OK in 0.037 seconds
+[0m07:02:31.939159 [debug] [MainThread]: On debug: Close
+[0m07:02:31.939775 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m07:02:31.940355 [info ] [MainThread]: [32mAll checks passed![0m
+[0m07:02:31.941184 [info ] [MainThread]: Your new dbt project "eia923_pipeline" was created!
+Initialized new project in /home/renda/analytics_engineer_projects/eia923_project/eia923_pipeline/eia923_pipeline
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:02:31.946272 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 17.475359, "process_in_blocks": "1056", "process_kernel_time": 0.409104, "process_mem_max_rss": "162212", "process_out_blocks": "104", "process_user_time": 3.040211}
+[0m07:02:31.947280 [debug] [MainThread]: Command `dbt init` succeeded at 07:02:31.947108 after 17.48 seconds
+[0m07:02:31.947702 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m07:02:31.948142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f2b73f2ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f2b1283bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f2b70ad150>]}
+[0m07:02:31.948694 [debug] [MainThread]: Flushing usage events
+[0m07:02:32.373031 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:02:54.070807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6017259e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a60190ac910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6015be3890>]}
+
+
+============================== 07:02:54.076829 | 50e1c28a-4098-41b8-afb4-e37940e05546 ==============================
+[0m07:02:54.076829 [info ] [MainThread]: Running with dbt=1.12.4
+[0m07:02:54.078203 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'indirect_selection': 'eager', 'warn_error': 'None', 'use_colors': 'True', 'write_json': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'profiles_dir': '/home/renda/.dbt', 'no_print': 'None', 'version_check': 'True', 'log_format': 'default', 'fail_fast': 'False', 'debug': 'False', 'introspect': 'True', 'hints_enabled': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'cache_selected_only': 'False', 'log_path': 'logs', 'printer_width': '80', 'static_parser': 'True', 'invocation_command': 'dbt init eia923_pipeline'}
+[0m07:02:54.116151 [info ] [MainThread]: A project called eia923_pipeline already exists here.
+[0m07:02:54.118171 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.19308443, "process_in_blocks": "0", "process_kernel_time": 0.260089, "process_mem_max_rss": "118212", "process_out_blocks": "8", "process_user_time": 2.364814}
+[0m07:02:54.119063 [debug] [MainThread]: Command `dbt init` succeeded at 07:02:54.118897 after 0.19 seconds
+[0m07:02:54.119525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6015de6ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6015df6f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6015c12690>]}
+[0m07:02:54.120092 [debug] [MainThread]: Flushing usage events
+[0m07:02:54.593688 [debug] [MainThread]: An error was encountered while trying to flush usage events

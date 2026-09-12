@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: eia923_raw
+    schema: main
+    tables:
+      - name: raw_boiler_fuel
+        description: "Raw monthly boiler fuel consumption and emissions data from EIA Form 923, Page 3."
+      - name: raw_plant_frame
+        description: "Raw plant-level operational metadata and geographic frame from EIA Form 923, Page 6."
